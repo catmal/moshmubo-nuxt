@@ -219,7 +219,7 @@ useHead({
               </h3>
               <q-virtual-scroll
                 :items="credits"
-                v-if=" credits.length > 0"
+                v-if="credits && credits.length > 0"
                 virtual-scroll-horizontal
                 v-slot="{ item, index }"
               >
@@ -248,12 +248,12 @@ useHead({
                 </div>
               </q-virtual-scroll>
 
-              <p v-if="credits.length === 0">
+              <p v-if="credits && credits.length === 0">
                 There are no credits for this movie. They will be fetched soon
               </p>
               <h3
                 class="q-mt-md"
-                v-if="collectionMovies.length > 0"
+                v-if="collectionMovies && collectionMovies.length > 0"
               >
                 Collection
               </h3>
@@ -347,7 +347,7 @@ useHead({
                     />
                   </div>
                 </div>
-                <p v-if="curiousFacts.length === 0 && !loadingFacts">
+                <p v-if="curiousFacts && curiousFacts.length === 0 && !loadingFacts">
                   There are no curious facts for this movie. AI will generate them soon
                 </p>
                 <div
@@ -378,7 +378,7 @@ useHead({
                     />
                   </div>
                 </div>
-                <p v-if="watchReasons.length === 0 && !loadingWatchReasons">
+                <p v-if="watchReasons && watchReasons.length === 0 && !loadingWatchReasons">
                   There are no why to watch reasons for this movie. AI will generate them soon
                 </p>
                 <div
@@ -394,7 +394,7 @@ useHead({
                   <q-badge>AI</q-badge>
                 </h3>
                 <q-virtual-scroll
-                  v-if="!loadingSimilarMovies && similarMovies.length > 0"
+                  v-if="!loadingSimilarMovies &&similarMovies && similarMovies.length > 0"
                   :items="similarMovies"
                   virtual-scroll-horizontal
                   v-slot="{ item, index }"
