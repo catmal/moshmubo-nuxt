@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const isProdEnv = process.env.NODE_ENV === 'production'
+const devUrl = 'http://localhost:3000/api/v1/'
+const prodUrl = 'https://admin.moshmubo.com/admin'
+const url = isProdEnv ? prodUrl : devUrl
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -12,7 +17,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      baseURL: 'http://localhost:3000/api/v1/',
+      baseURL: url,
     }
   },
   css: [
