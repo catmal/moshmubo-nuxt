@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="style" href="/_nuxt/node_modules/@quasar/extras/material-icons/material-icons.css">
+    <link rel="preload" as="style" href="/_nuxt/node_modules/quasar/dist/quasar.css">
+    <link rel="preload" as="style" href="/_nuxt/assets/css/main.scss">
+    <link rel="preload" as="style"
+        href="/_nuxt/node_modules/vite-plugin-vue-inspector/src/Overlay.vue?vue&type=style&index=0&scoped=31d1379f&lang.css">
+    <link rel="preload" as="style"
+        href="/_nuxt/components/Movies/MoviesSorting.vue?vue&type=style&index=0&scoped=d7614c34&lang.css">
+    <link rel="preload" as="style"
+        href="/_nuxt/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=bc8852ab&lang.css">
+    <link rel="modulepreload" as="script" crossorigin
+        href="/_nuxt/Users/mirco/Webapps/moshmubo-nuxt/node_modules/nuxt/dist/app/entry.js">
+    <link rel="stylesheet" href="/_nuxt/node_modules/@quasar/extras/material-icons/material-icons.css">
+    <link rel="stylesheet" href="/_nuxt/node_modules/quasar/dist/quasar.css">
+    <link rel="stylesheet" href="/_nuxt/assets/css/main.scss">
+    <link rel="stylesheet"
+        href="/_nuxt/node_modules/vite-plugin-vue-inspector/src/Overlay.vue?vue&type=style&index=0&scoped=31d1379f&lang.css">
+    <link rel="stylesheet"
+        href="/_nuxt/components/Movies/MoviesSorting.vue?vue&type=style&index=0&scoped=d7614c34&lang.css">
+    <link rel="stylesheet"
+        href="/_nuxt/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=bc8852ab&lang.css">
+    <script>
+        if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
+            Object.defineProperty(window, '__NUXT_DEVTOOLS_TIME_METRIC__', {
+                value: {},
+                enumerable: false,
+                configurable: true,
+            })
+        }
+        window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
+    </script>
+</head>
+
+<body class="desktop no-touch body--light">
+    <div id="__nuxt">
+        <div class="q-layout q-layout--standard" style="min-height:0px;" tabindex="-1"><!----><!---->
+            <header class="q-header q-layout__section--marginal fixed-top bg-dark text-white" style="">
+                <div class="q-toolbar row no-wrap items-center" role="toolbar"><button
+                        class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--round q-btn--actionable q-focusable q-hoverable q-btn--dense"
+                        style="" tabindex="0" type="button"><span class="q-focus-helper"></span><span
+                            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i
+                                class="q-icon notranslate material-icons" style="" aria-hidden="true"
+                                role="img">menu</i></span></button>
+                    <div class="q-toolbar__title ellipsis"></div>
+                    <div data-v-inspector="app.vue:99:9">
+                        <div class="q-avatar cursor-pointer" style="font-size:40px;">
+                            <div class="q-avatar__content row flex-center overflow-hidden" style="">
+                                <div class="q-img q-img--menu" style="" role="img">
+                                    <div style="padding-bottom:56.25%;"></div>
+                                    <div class="q-img__content absolute-full q-anchor--skip"></div>
+                                </div><!---->
+                            </div>
+                        </div>
+                    </div><a
+                        class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--round q-btn--actionable q-focusable q-hoverable q-btn--dense cursor-pointer q-mr-md"
+                        style="" tabindex="0" href="/sign_in" clickable tag="a"><span
+                            class="q-focus-helper"></span><span
+                            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"> Login
+                        </span></a><a
+                        class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--round q-btn--actionable q-focusable q-hoverable q-btn--dense cursor-pointer q-mx-md"
+                        style="" tabindex="0" href="/settings" clickable tag="a"><span
+                            class="q-focus-helper"></span><span
+                            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i
+                                class="q-icon notranslate material-icons" style="" aria-hidden="true"
+                                role="img">build</i></span></a><!--v-if-->
+                </div><!---->
+            </header>
+            <div class="q-drawer-container">
+                <div class="q-drawer__opener fixed-left" aria-hidden="true"></div>
+                <div class="fullscreen q-drawer__backdrop hidden" style="background-color:rgba(0,0,0,0);"
+                    aria-hidden="true"></div>
+                <aside
+                    class="q-drawer q-drawer--left q-layout--prevent-focus fixed q-drawer--on-top q-drawer--mobile q-drawer--top-padding"
+                    style="width:300px;transform:translateX(-300px);">
+                    <div class="q-drawer__content fit scroll bg-black text-white">
+                        <div class="q-list q-list--bordered q-list--padding rounded-borders"><!--[--><a
+                                class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable"
+                                style="" role="listitem" tabindex="0" href="/movies">
+                                <div class="q-focus-helper" tabindex="-1"></div>
+                                <div
+                                    class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                    <i class="q-icon text-white notranslate material-icons" style="" aria-hidden="true"
+                                        role="presentation">movie</i></div>
+                                <div class="q-item__section column q-item__section--main justify-center">
+                                    <p class="text-bold q-mt-md" data-v-inspector="app.vue:191:13">Explore</p>
+                                </div>
+                            </a><a
+                                class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable"
+                                style="" role="listitem" tabindex="0" href="/movies/ranks">
+                                <div class="q-focus-helper" tabindex="-1"></div>
+                                <div
+                                    class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                    <i class="q-icon text-white notranslate material-icons" style="" aria-hidden="true"
+                                        role="presentation">star</i></div>
+                                <div class="q-item__section column q-item__section--main justify-center">
+                                    <p class="text-bold q-mt-md" data-v-inspector="app.vue:191:13">Ranks</p>
+                                </div>
+                            </a><a
+                                class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable"
+                                style="" role="listitem" tabindex="0" href="/movies/suggestions">
+                                <div class="q-focus-helper" tabindex="-1"></div>
+                                <div
+                                    class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                    <i class="q-icon text-white notranslate material-icons" style="" aria-hidden="true"
+                                        role="presentation">lightbulb_circle</i></div>
+                                <div class="q-item__section column q-item__section--main justify-center">
+                                    <p class="text-bold q-mt-md" data-v-inspector="app.vue:191:13">Suggestions</p>
+                                </div>
+                            </a><a
+                                class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable"
+                                style="" role="listitem" tabindex="0" href="/movies/watched">
+                                <div class="q-focus-helper" tabindex="-1"></div>
+                                <div
+                                    class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                    <i class="q-icon text-white notranslate material-icons" style="" aria-hidden="true"
+                                        role="presentation">face</i></div>
+                                <div class="q-item__section column q-item__section--main justify-center">
+                                    <p class="text-bold q-mt-md" data-v-inspector="app.vue:191:13">My Movies</p>
+                                </div>
+                            </a><a
+                                class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable"
+                                style="" role="listitem" tabindex="0" href="/movies/calendar">
+                                <div class="q-focus-helper" tabindex="-1"></div>
+                                <div
+                                    class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                    <i class="q-icon text-white notranslate material-icons" style="" aria-hidden="true"
+                                        role="presentation">calendar_month</i></div>
+                                <div class="q-item__section column q-item__section--main justify-center">
+                                    <p class="text-bold q-mt-md" data-v-inspector="app.vue:191:13">Calendar</p>
+                                </div>
+                            </a><!--]--></div>
+                    </div>
+                </aside>
+            </div><!--v-if-->
+            <div class="q-page-container" style="padding-top:50px;">
+                <main class="q-page" style="min-height:calc(100vh - 50px);">
+                    <div class="row" data-v-inspector="pages/movies.vue:41:7">
+                        <div class="col-12" data-v-inspector="pages/movies.vue:42:9">
+                            <div class="row q-col-gutter-sm q-px-sm q-py-sm"
+                                data-v-inspector="components/Movies/MoviesSorting.vue:38:3" data-v-d7614c34>
+                                <div class="col-3" data-v-inspector="components/Movies/MoviesSorting.vue:39:5"
+                                    data-v-d7614c34><button
+                                        class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable bg-primary text-white"
+                                        style="width:100%;" tabindex="0" type="button" data-v-d7614c34><span
+                                            class="q-focus-helper"></span><span
+                                            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i
+                                                class="q-icon notranslate material-icons" style="" aria-hidden="true"
+                                                role="img">calendar_month</i><!--[--><!----><i
+                                                class="q-icon notranslate material-icons" style="font-size:24px;"
+                                                aria-hidden="true"
+                                                role="presentation">arrow_downward</i><!--]--></span></button></div>
+                                <div class="col-3" data-v-inspector="components/Movies/MoviesSorting.vue:52:5"
+                                    data-v-d7614c34><button
+                                        class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable bg-black text-white"
+                                        style="width:100%;" tabindex="0" type="button" data-v-d7614c34><span
+                                            class="q-focus-helper"></span><span
+                                            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i
+                                                class="q-icon notranslate material-icons" style="" aria-hidden="true"
+                                                role="img">star</i><!--v-if--></span></button></div>
+                                <div class="col-3" data-v-inspector="components/Movies/MoviesSorting.vue:65:5"
+                                    data-v-d7614c34><button
+                                        class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable bg-black text-white"
+                                        style="width:100%;" tabindex="0" type="button" data-v-d7614c34><span
+                                            class="q-focus-helper"></span><span
+                                            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i
+                                                class="q-icon notranslate material-icons" style="" aria-hidden="true"
+                                                role="img">mood</i><!--v-if--></span></button></div>
+                                <div class="col-3" data-v-inspector="components/Movies/MoviesSorting.vue:78:5"
+                                    data-v-d7614c34><button
+                                        class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable bg-black text-white"
+                                        style="width:100%;" tabindex="0" type="button" data-v-d7614c34><span
+                                            class="q-focus-helper"></span><span
+                                            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i
+                                                class="q-icon notranslate material-icons" style="" aria-hidden="true"
+                                                role="img">group</i><!--v-if--></span></button></div>
+                            </div><!--v-if-->
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <footer class="q-footer q-layout__section--marginal fixed-bottom bg-dark" style=""><!---->
+                <div class="q-toolbar row no-wrap items-center flex-center" role="toolbar">
+                    <div class="row q-gutter-md" data-v-inspector="app.vue:224:9"><!--[--><a
+                            class="q-item q-item-type row no-wrap q-router-link--exact-active q-router-link--active q-item--clickable q-link cursor-pointer q-focusable q-hoverable"
+                            style="" role="listitem" tabindex="0" href="/movies">
+                            <div class="q-focus-helper" tabindex="-1"></div>
+                            <div
+                                class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                <i class="q-icon text-primary notranslate material-icons" style="" aria-hidden="true"
+                                    role="presentation">movie</i></div>
+                            <div class="q-item__section column q-item__section--main justify-center">
+                                <div style="" class="q-item__label">
+                                    <h3 class="text-bold" data-v-inspector="components/Shared/EssentialLink.vue:20:9">
+                                        Movies</h3>
+                                </div>
+                            </div>
+                        </a><a
+                            class="q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable"
+                            style="" role="listitem" tabindex="0" href="/shows">
+                            <div class="q-focus-helper" tabindex="-1"></div>
+                            <div
+                                class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                                <i class="q-icon text-primary notranslate material-icons" style="" aria-hidden="true"
+                                    role="presentation">tv</i></div>
+                            <div class="q-item__section column q-item__section--main justify-center">
+                                <div style="" class="q-item__label">
+                                    <h3 class="text-bold" data-v-inspector="components/Shared/EssentialLink.vue:20:9">
+                                        Shows</h3>
+                                </div>
+                            </div>
+                        </a><!--]--></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="application/json" id="__NUXT_DATA__"
+        data-ssr="true">[["Reactive",1],{"data":2,"state":3,"_errors":6,"serverRendered":7,"path":8,"pinia":9},{},{"$s__nuxt_devtools__":4},{"timeSsrStart":5},1692043215497,{},true,"/movies",{"user":10,"movie":17},{"currentUser":11},{"token":12,"signedIn":13,"providers":12,"data":14,"backend_data":15},null,false,{},{"name":16},"",{"currentMovie":18,"movies":21,"genres":23,"curiousFacts":24,"quotes":25,"credits":26,"similarMovies":27,"collectionMovies":28,"watchReasons":29,"ratingTopics":30,"watchedMovies":31,"watchListMovies":32,"movieRankLines":33,"movieRanks":34,"currentMovieRank":35,"suggestions":36,"loadingSuggestions":13,"loadingQuotes":13,"loadingFacts":13,"loadingCollectionMovies":13,"loadingRatingTopics":13,"loadingWatchReasons":13,"loadingSimilarMovies":13,"loadingPlot":13,"pagination":37,"watchedMoviesPagination":41,"filters":42},{"title":16,"release_date":16,"facts":19,"credits":20,"plot_recap":16},[],[],{"movies":22},[],[],[],[],[],[],[],[],{},[],[],[],[],{},[],{"sortString":38,"descending":7,"page":39,"rowsPerPage":40,"rowsNumber":40},"primary_release_date.desc",1,20,{"sortString":38,"descending":7,"page":39,"rowsPerPage":40,"rowsNumber":40},{"yearMax":43,"yearMin":44,"ratingMin":45,"ratingMax":46,"voteCountMin":47,"sortString":38,"genres":48},2024,1930,6,10,200,[]]</script>
+    <script>window.__NUXT__ = {}; window.__NUXT__.config = { public: {}, app: { baseURL: "/", buildAssetsDir: "/_nuxt/", cdnURL: "" } }</script>
+    <script type="module" src="/_nuxt/@vite/client" crossorigin></script>
+    <script type="module" src="/_nuxt/Users/mirco/Webapps/moshmubo-nuxt/node_modules/nuxt/dist/app/entry.js"
+        crossorigin></script>
+</body>
+
+</html>
