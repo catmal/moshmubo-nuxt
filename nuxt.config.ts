@@ -2,7 +2,7 @@
 
 const isProdEnv = process.env.NODE_ENV === 'production'
 const devUrl = 'http://localhost:3000/api/v1/'
-const prodUrl = 'https://admin.moshmubo.com/'
+const prodUrl = 'https://admin.moshmubo.com/api/v1'
 const url = isProdEnv ? prodUrl : devUrl
 export default defineNuxtConfig({
   devtools: { enabled: true },
