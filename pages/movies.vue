@@ -27,7 +27,21 @@ function show (payload) {
   router.push({ name: "movie-tmdb_id-name", params: { name, tmdb_id: payload.id } })
 }
 
-  await request({ pagination: pagination.value })
+await request({ pagination: pagination.value })
+
+useSeoMeta({
+  title: "Moshmubo | Latest Movies",
+  ogTitle: "Moshmobo | Latest Movies",
+  description: "Latest movies released. Browse content.",
+  ogDescription: "Latest movies released. Browse content.",
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+})
+useHead({
+  meta: [
+    { name: 'Moshmubo | Latest Movies', content: selectedMovie.value.title }
+  ],
+})
 </script>
 
 <template>
