@@ -39,7 +39,7 @@ useSeoMeta({
 })
 useHead({
   meta: [
-    { name: 'Moshmubo | Latest Movies', content: selectedMovie.value.title }
+    { name: 'Moshmubo | Latest Movies', content: "Latest Movies" }
   ],
 })
 </script>
