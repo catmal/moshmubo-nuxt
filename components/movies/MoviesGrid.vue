@@ -35,9 +35,7 @@ async function request (payload) {
   }
 }
 
-onMounted(async () => {
   await request({ pagination: pagination.value })
-})
 </script>
 
 <template>

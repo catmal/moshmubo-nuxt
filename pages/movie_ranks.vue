@@ -8,9 +8,7 @@ const router = useRouter()
 const { loadMovieRanks } = useMovieStore()
 const { movieRanks } = storeToRefs(useMovieStore())
 
-onMounted(async () => {
-  await loadMovieRanks({ rankType: 'genre', pagination: {} })
-})
+await loadMovieRanks({ rankType: 'genre', pagination: {} })
 
 function show (payload) {
   router.push({ name: 'movie_rank-id-name', params: { id: payload.id, name: payload.attributes.name } })

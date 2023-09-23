@@ -27,9 +27,7 @@ function show (payload) {
   router.push({ name: "movie-tmdb_id-name", params: { name, tmdb_id: payload.id } })
 }
 
-onMounted(async () => {
   await request({ pagination: pagination.value })
-})
 </script>
 
 <template>
