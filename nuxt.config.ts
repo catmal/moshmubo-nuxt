@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt'
   ],
+  ssr: true,
   quasar: { plugins: ['Notify'], sassVariables: '/assets/css/quasar.variables.scss' },
   devServer: {
     port: 8000
@@ -23,12 +24,48 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.scss',
   ],
+  buildModules: [
+    '@nuxtjs/pwa',
+  ],
   components: [
     { path: '~/components/movies', prefix: 'Movies' },
     { path: '~/components/shared', prefix: 'Shared' },
     { path: '~/components/torrents', prefix: 'Torrents' },
     '~/components'
-  ]
-
-
+  ],
+  pwa: {
+    meta: {
+      name: "Moshmubo",
+      author: "Mirco Cattabriga",
+      description: "Movies Shows Music Books",
+    },
+    manifest: {
+      name: "Moshmubo",
+      lang: "en",
+      useWebmanifestExtension: false,
+      start_url: "abc.com",
+      display: "standalone",
+      background_color: "#fff3e0",
+      theme_color: "#fff3e0",
+    },
+    workbox: {
+      runtimeCaching: [
+        {
+          urlPattern: "https://assets.abc.com/.*",
+          strategyOptions: {
+            cacheName: "pwa-image-cache",
+          },
+          strategyPlugins: [
+            {
+              use: "Expiration",
+              config: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 30,
+              },
+            },
+          ],
+        },
+      ],
+    }
+  }
 })
