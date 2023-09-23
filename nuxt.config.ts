@@ -9,7 +9,8 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-quasar-ui',
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt'
+    '@pinia-plugin-persistedstate/nuxt',
+    'nuxt-simple-sitemap'
   ],
   ssr: true,
   quasar: { plugins: ['Notify'], sassVariables: '/assets/css/quasar.variables.scss' },
