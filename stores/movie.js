@@ -88,6 +88,7 @@ export const useMovieStore = defineStore({
           per_page: payload.pagination.rowsPerPage,
           min_year: this.filters.yearMin,
           max_year: this.filters.yearMax,
+          min_vote_count: this.filters.voteCountMin,
           min_rating: this.filters.ratingMin,
           max_rating: this.filters.ratingMax,
           genres: genres
@@ -105,7 +106,6 @@ export const useMovieStore = defineStore({
 
       )
       this.pagination = await payload.pagination
-      console.log(data.value.results)
       this.movies = await data.value.results
       this.pagination.rowsNumber = await data.total_results
 
@@ -128,12 +128,8 @@ export const useMovieStore = defineStore({
       }
     },
     async loadMovie (id) {
-      try {
-        const { data, error, pending } = await useApiFetch("movies/" + id)
-        this.currentMovie = data.value.data.attributes
-      } catch (error) {
-        // showNotification({ message: error.message, type: 'error' })
-      }
+      const { data, error, pending } = await useApiFetch("movies/" + id)
+      this.currentMovie = await data.value.data.attributes
     },
     async setWatchedMovie (payload) {
       const res = await $fetch('http://localhost:3000/api/v1/set_watched_movie', {
