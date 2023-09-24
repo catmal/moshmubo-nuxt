@@ -8,7 +8,9 @@ export const useApiFetch = async (path, query) => {
     max_year: query.max_year,
     min_rating: query.min_rating,
     max_rating: query.max_rating,
-    min_vote_count: query.min_vote_count
+    min_vote_count: query.min_vote_count,
+    watched: query.watched,
+    watchlist: query.watchlist
   } : {}
 
   const config = useRuntimeConfig()
